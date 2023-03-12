@@ -9,7 +9,7 @@ body{
   align-items: center;
 }
 .accordion__title{
-  margin: 20px 0 10px 0;
+  margin: 3vh 0 1vh 0;
   text-align: center;
   font-size: 2.3rem;
 }
@@ -82,7 +82,12 @@ body{
   padding: 10px 0;
   background-color: #fff;
 } 
-
+.item-content:hover  {
+  max-height: 600px;
+  padding: 10px 0;
+  background-color: #fff;
+  cursor: pointer;
+}
 @media (max-width:1080px){
   .item__meme{
     max-width: 50%;
