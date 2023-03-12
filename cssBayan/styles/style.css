@@ -12,12 +12,14 @@ body{
   margin: 3vh 0 1vh 0;
   text-align: center;
   font-size: 2.3rem;
+  color: #ff1493;
+  text-transform: uppercase;
 }
 .accordion__line{
   min-width: 80%;
-  height: 2px;
+  height: 0.5vh;
   background-color: black;
-  margin-bottom: 7px;
+  margin-bottom: 1vh;
 }
 .accordion-list{
   margin: 0 auto;
@@ -50,7 +52,7 @@ body{
 }
 
 .item__label{
-  padding: 10px;
+  padding: 1.2vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -83,7 +85,7 @@ body{
   background-color: #fff;
 } 
 .item-content:hover  {
-  max-height: 600px;
+  max-height: 38rem;
   padding: 10px 0;
   background-color: #fff;
   cursor: pointer;
@@ -102,7 +104,7 @@ body{
     max-width: 95%;
   }
   .item__label{
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .item__meme{
     max-width: 65%;
