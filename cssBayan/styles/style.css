@@ -68,7 +68,8 @@ body{
 .item-content{
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s;
+  transition: all .8s ease 0s;
+  /* transition: max-height 0.5s; */
   display: flex;
   justify-content: center;
   transform: translateZ(0);
