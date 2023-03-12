@@ -43,7 +43,7 @@ body{
   transform: rotate(0deg);
 }
 .accordion-item{
-  margin-bottom: 15px;
+  margin-bottom: 2vh;
   list-style: none;
   width: 100%;
   background-color: #dcdcdc;
@@ -75,18 +75,18 @@ body{
 }
 .item__label + input[type="radio"]:checked + .item-content{
   max-height: 38rem;
-  padding: 10px 0;
+  padding: 1.5vh 0;
   background-color: #fff;
 }
 
 .item__label:hover +input[type="radio"] + .item-content{
   max-height: 38rem;
-  padding: 10px 0;
+  padding: 1.5vh 0;
   background-color: #fff;
 } 
 .item-content:hover  {
   max-height: 38rem;
-  padding: 10px 0;
+  padding: 1.5vh 0;
   background-color: #fff;
   cursor: pointer;
 }
