@@ -1,0 +1,124 @@
+body{
+  background-color: #f8f8ff;
+}
+.accordion{
+  margin: 0 auto;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.accordion__title{
+  margin: 3vh 0 1vh 0;
+  text-align: center;
+  font-size: 2.3rem;
+  color: #ff1493;
+  text-transform: uppercase;
+}
+.accordion__line{
+  min-width: 80%;
+  height: 0.5vh;
+  background-color: black;
+  margin-bottom: 1vh;
+}
+.accordion-list{
+  margin: 0 auto;
+  width: 80%;
+}
+.item__meme{
+  max-width: 40%;
+}
+.accordion-list:hover .accordion-item .item__label{
+  color: #ff1493;
+}
+.accordion-list .accordion-item .item__label .cross{
+  display: none;
+}
+
+.accordion-list:hover .accordion-item .item__label .cross{
+  display: block;
+  transform: rotate(45deg);
+}
+.accordion-list .accordion-item:hover .item__label .cross{
+  transform: rotate(0deg);
+}
+.accordion-item{
+  margin-bottom: 2vh;
+  list-style: none;
+  width: 100%;
+  background-color: #dcdcdc;
+  cursor: pointer;
+  transform: translateZ(0);
+}
+
+.item__label{
+  padding: 1.2vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.56rem;
+  font-weight: 800;
+  cursor: pointer;
+  color: black;
+  transform: translateZ(0);
+}
+.item__label + input[type="radio"]{
+  display: none;
+}
+.item-content{
+  max-height: 0;
+  overflow: hidden;
+  transition: all .8s ease 0s;
+  /* transition: max-height 0.5s; */
+  display: flex;
+  justify-content: center;
+  transform: translateZ(0);
+}
+.item__label + input[type="radio"]:checked + .item-content{
+  max-height: 38rem;
+  padding: 1.5vh 0;
+  background-color: #fff;
+}
+
+.item__label:hover +input[type="radio"] + .item-content{
+  max-height: 38rem;
+  padding: 1.5vh 0;
+  background-color: #fff;
+} 
+.item-content:hover  {
+  max-height: 38rem;
+  padding: 1.5vh 0;
+  background-color: #fff;
+  cursor: pointer;
+}
+@media (max-width:1080px){
+  .item__meme{
+    max-width: 50%;
+  }
+}
+
+@media (max-width:850px){
+  .accordion__title{
+    font-size: 1.8rem;
+  }
+  .accordion{
+    max-width: 95%;
+  }
+  .item__label{
+    font-size: 1.25rem;
+  }
+  .item__meme{
+    max-width: 65%;
+  }
+}
+@media (max-width: 500px){
+  .accordion__title{
+    font-size: 1.56rem;
+  }
+  .item__meme{
+    max-width: 90%;
+  }
+  .item__label{
+    font-size: 1rem;
+  }
+}
