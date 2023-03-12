@@ -1,0 +1,82 @@
+body{
+  background-color: #f8f8ff;
+}
+.accordion{
+  margin: 0 auto;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.accordion__title{
+  margin: 20px 0 10px 0;
+  text-align: center;
+  font-size: 37px;
+}
+.accordion__line{
+  min-width: 80%;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 7px;
+}
+.accordion-list{
+  margin: 0 auto;
+  width: 80%;
+}
+.item__meme{
+  max-width: 40%;
+}
+.accordion-list:hover .accordion-item .item__label{
+  color: #ff1493;
+}
+.accordion-list .accordion-item .item__label .cross{
+  display: none;
+}
+
+.accordion-list:hover .accordion-item .item__label .cross{
+  display: block;
+  transform: rotate(45deg);
+}
+.accordion-list .accordion-item:hover .item__label .cross{
+  transform: rotate(0deg);
+}
+.accordion-item{
+  margin-bottom: 15px;
+  list-style: none;
+  width: 100%;
+  background-color: #dcdcdc;
+  background-repeat: 4px;
+  cursor: pointer;
+}
+
+.item__label{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  color: black;
+}
+.item__label + input[type="radio"]{
+  display: none;
+}
+.item-content{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  display: flex;
+  justify-content: center;
+}
+.item__label + input[type="radio"]:checked + .item-content{
+  max-height: 600px;
+  padding: 10px 0;
+  background-color: #fff;
+}
+
+.item__label:hover +input[type="radio"] + .item-content{
+  max-height: 600px;
+  padding: 10px 0;
+  background-color: #fff;
+} 
